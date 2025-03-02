@@ -1,0 +1,9 @@
+# netlify.toml
+[build]
+  command = "npm run build"
+  publish = ".next"
+  base = "/"
+
+# Handle Next.js routing
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
