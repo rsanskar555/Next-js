@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Remove output: 'export' for proper Next.js deployment on Netlify
+  output: 'export',
   eslint: {
     ignoreDuringBuilds: true,
   },
