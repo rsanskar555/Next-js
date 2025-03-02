@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Remove output: 'export' for proper Next.js deployment on Netlify
   eslint: {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  // This ensures the app works properly with static export
-  trailingSlash: true,
 };
 
 module.exports = nextConfig;
